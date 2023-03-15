@@ -8,10 +8,15 @@ import java.io.IOException;
 
 public class Application extends javafx.application.Application {
     @Override
+    public void init() throws Exception {
+        ContactsInstance.getInstance().loadContacts();
+    }
+
+    @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        Scene scene = new Scene(fxmlLoader.load(), 600, 600);
+        stage.setTitle("Contacts");
         stage.setScene(scene);
         stage.show();
     }

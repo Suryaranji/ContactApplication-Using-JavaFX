@@ -19,7 +19,7 @@
       <TableView fx:id="table" prefHeight="500" prefWidth="600" GridPane.rowIndex="0" GridPane.columnIndex="0"  >
         <columns>
           <TableColumn fx:id="firstName" prefWidth="150" text="First Name" />
-          <TableColumn fx:id="lastname" prefWidth="150" text="Last Name" />
+          <TableColumn fx:id="lastName" prefWidth="150" text="Last Name" />
             <TableColumn fx:id="phoneNumber" prefWidth="150" text="Phone Number" />
             <TableColumn  fx:id="notes" prefWidth="150" text="Notes" />
         </columns>

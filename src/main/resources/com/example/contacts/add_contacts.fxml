@@ -6,10 +6,13 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<DialogPane xmlns="http://javafx.com/javafx"
+<?import javafx.scene.text.Text?>
+<DialogPane fx:id="dialog" xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.example.contacts.AddContactsController"
             prefHeight="300.0" prefWidth="400">
+
+
     <headerText>
         Add Contact
     </headerText>
